@@ -1,0 +1,24 @@
+[data-role="footer"]
+{
+	display : block;
+	height : 20 px;
+	background-color: red
+}
+
+[data-role ="controlgroup"] label{
+    display: block;
+    padding-left: 15px;
+    text-indent: 50px;
+}
+
+[data-role="header"]
+{
+	display : block;
+	height : 20 px;
+	background-color: red
+}
+
+*
+{
+	font-family : arial;
+}
