@@ -13,20 +13,30 @@
         <title>Tact</title>
     </head>
     <body>
-        
         <div data-role="page"> <!-- page mode simple-->
+
             <div data-role="header"> <!-- header : nom de l'application-->
                 <h1>Tact</h1>
             </div><!-- /header -->
+
             <div data-role="content">   <!--contenu donc appareillage bluetooth + choix notif -->
                 
-                <div id="connexion">   
-                  <ul id="deviceList">                    
-                  </ul>
-                  <button id="refreshButton">Refresh</button>
+                <div data-role="fieldcontain">
+                   <label for="select-choice-1" class="select">Choisissez un module Bluetooth</label>
+                   <select name="select-choice-1" id="select-choice-1"> <!--  A compléter en fonction de ce que l'appareil capte comme module -->
+                      <option value="standard">Nexus S</option>
+                   </select>
                 </div>
 
-                <div data-role="fieldcontain">                     <!-- checboxes permettant de choisir les notifs qu'on veut avoir -->
+                <div data-role="fieldcontain"> <!-- Petit texte s'affichant lorsque le module bluetooth est connecté -->
+                    <label for="name">Connexion</label>
+                    <input type="text" name="name" id="name" value="Connecté"  />
+                </div>  
+
+
+
+
+                <div data-role="fieldcontain">  <!-- checboxes permettant de choisir les notifs qu'on veut avoir -->
                     <fieldset data-role="controlgroup">
                        <legend>Notifications disponibles</legend>
                        <input type="checkbox" name="checkbox-1" id="checkbox-1" class="custom" />
@@ -40,9 +50,10 @@
                        <input type="checkbox" name="checkbox-5" id="checkbox-5" class="custom" />
                        <label for="checkbox-">Notifications Twitter</label>
                     </fieldset>
-                </div>
+                </div>      
 
             </div><!-- /content -->
+
             <div data-role="footer">   <!-- bas de page permettant de switcher entre mode simple et avancé -->
                 <div data-role="navbar">
                     <ul>
@@ -51,6 +62,7 @@
                     </ul>
                 </div>
         </div><!-- /page -->
+
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
     </body>
