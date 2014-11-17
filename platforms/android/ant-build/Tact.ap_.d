@@ -32,9 +32,17 @@
 /Users/Crymsius/Tact/platforms/android/assets/www/config.xml \
 /Users/Crymsius/Tact/platforms/android/assets/www/cordova.js \
 /Users/Crymsius/Tact/platforms/android/assets/www/cordova_plugins.js \
+/Users/Crymsius/Tact/platforms/android/assets/www/images \
 /Users/Crymsius/Tact/platforms/android/assets/www/index.html \
+/Users/Crymsius/Tact/platforms/android/assets/www/js \
 /Users/Crymsius/Tact/platforms/android/assets/www/plugins \
 /Users/Crymsius/Tact/platforms/android/assets/www/style.css \
+/Users/Crymsius/Tact/platforms/android/assets/www/images/ajax-loader.gif \
+/Users/Crymsius/Tact/platforms/android/assets/www/images/icons-18-black.png \
+/Users/Crymsius/Tact/platforms/android/assets/www/images/icons-18-white.png \
+/Users/Crymsius/Tact/platforms/android/assets/www/images/icons-36-black.png \
+/Users/Crymsius/Tact/platforms/android/assets/www/images/icons-36-white.png \
+/Users/Crymsius/Tact/platforms/android/assets/www/js/index.js \
 /Users/Crymsius/Tact/platforms/android/assets/www/plugins/com.megster.cordova.rfduino \
 /Users/Crymsius/Tact/platforms/android/assets/www/plugins/com.megster.cordova.rfduino/www \
 /Users/Crymsius/Tact/platforms/android/assets/www/plugins/com.megster.cordova.rfduino/www/rfduino.js \
