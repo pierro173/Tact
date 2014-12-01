@@ -23,6 +23,29 @@ var arrayBufferToInt = function (ab) {
     return a[0];
 };
 
+$(document).ready(function() { // le $ indique que c'est avec jquery, ici on sélection l'ensemble du document.
+
+    $("#ShowEConnexion").click(function() {
+        $("#EcranConnexion").show();
+        $("#EcranSimple").hide();
+        $("#EcranAvance").hide();
+    });
+
+    $("#ShowSimple").click(function() {
+        $("#EcranSimple").show();
+        $("#EcranConnexion").hide();
+        $("#EcranAvance").hide();
+    });
+
+    $("#ShowAvance").click(function() {
+        $("#EcranAvance").show();
+        $("#EcranConnexion").hide();
+        $("#EcranSimple").hide();
+    });
+    setInterval(function(){
+    }, 200);
+});
+
 var app = {
     initialize: function() {
         this.bindEvents();

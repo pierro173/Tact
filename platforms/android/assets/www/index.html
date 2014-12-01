@@ -1,53 +1,61 @@
 <!DOCTYPE html>
-
 <html>
     <head> 
-    <title>My Page</title> 
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <link rel="stylesheet" href="style.css" />
-    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
-    <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
-</head> 
+      <meta charset="utf-8">  <!--déclaration de la nature de l'encodage (pour les accents)-->
+      <title>My Page</title> 
+      <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+      <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+      <meta name="viewport" content="width=vice-width, initial-scale=1"> 
+      <link rel="stylesheet" href="style.css"/>
+      <script type="text/javascript" src="js/index.js"></script>
+    </head>
+
     <body>
-        
         <div data-role="page"> <!-- page mode simple-->
+    
             <div data-role="header"> <!-- header : nom de l'application-->
-                <h1>Tact</h1>
-            </div><!-- /header -->
+                  <h1>Tact</h1>
+            </div>     <!-- /header -->
+
             <div data-role="content">   <!--contenu donc appareillage bluetooth + choix notif -->
-                
-                <div id="connexion">   
-                  <ul id="deviceList">                    
-                  </ul>
-                  <button id="refreshButton">Refresh</button>
-                </div>
+                  <span id="EcranConnexion">   
+                        Connexion Bluetooth
 
-                <div data-role="fieldcontain">                     <!-- checboxes permettant de choisir les notifs qu'on veut avoir -->
-                    <fieldset data-role="controlgroup">
-                       <legend>Notifications disponibles</legend>
-                       <input type="checkbox" name="checkbox-1" id="checkbox-1" class="custom" />
-                       <label for="checkbox-1">Textos</label>
-                       <input type="checkbox" name="checkbox-2" id="checkbox-2" class="custom" />
-                       <label for="checkbox-2">Appels</label>
-                       <input type="checkbox" name="checkbox-3" id="checkbox-3" class="custom" />
-                       <label for="checkbox-3">Emails</label>
-                       <input type="checkbox" name="checkbox-4" id="checkbox-4" class="custom" />
-                       <label for="checkbox-4">Notifications Facebook</label>
-                       <input type="checkbox" name="checkbox-5" id="checkbox-5" class="custom" />
-                       <label for="checkbox-5">Notifications Twitter</label>
-                    </fieldset>
-                </div>
+                        <ul id="deviceList">                    
+                        </ul>
+                        <button id="refreshButton">Refresh</button>
+                  </span>
+                  
+                  <span id="EcranSimple">
+                      <div data-role="fieldcontain">                     <!-- checboxes permettant de choisir les notifs qu'on veut avoir -->
+                          <fieldset data-role="controlgroup">
+                             <legend>Notifications disponibles</legend>
+                             <input type="checkbox" name="checkbox-1" id="checkbox-1" class="custom" />
+                             <label for="checkbox-1">Textos</label>
+                             <input type="checkbox" name="checkbox-2" id="checkbox-2" class="custom" />
+                             <label for="checkbox-2">Appels</label>
+                             <input type="checkbox" name="checkbox-3" id="checkbox-3" class="custom" />
+                             <label for="checkbox-3">Emails</label>
+                             <input type="checkbox" name="checkbox-4" id="checkbox-4" class="custom" />
+                             <label for="checkbox-4">Notifications Facebook</label>
+                             <input type="checkbox" name="checkbox-5" id="checkbox-5" class="custom" />
+                             <label for="checkbox-5">Notifications Twitter</label>
+                          </fieldset>
+                      </div>
+                  </span>
+                  <span id="EcranAvance">
+                    Bienvenue dans le Mode Avancé
+                  </span>
 
-            </div><!-- /content -->
+            </div> <!-- /content -->
             <div data-role="footer">   <!-- bas de page permettant de switcher entre mode simple et avancé -->
                 <div data-role="navbar">
                     <ul>
-                        <li><a href="#">Mode Simple</a></li> <!-- boutton mode simple sans lien -->
-                        <li><a href="#">Mode Avancé</a></li> <!-- boutton mode avancé sans lien-->
+                        <li><a id="ShowEConnexion">Connexion Bluetooth</a></li> <!-- boutton mode simple sans lien -->
+                        <li><a id="ShowSimple">Mode Simple</a></li> <!-- boutton mode simple sans lien -->
+                        <li><a id="ShowAvance">Mode Avancé</a></li> <!-- boutton mode avancé sans lien-->
                     </ul>
                 </div>
-        </div><!-- /page -->
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
+            </div><!-- /page -->
     </body>
 </html>
