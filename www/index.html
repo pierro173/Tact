@@ -15,38 +15,63 @@
       <script type="text/javascript" src="js/index.js"></script>
     </head>
 
-<!-- ................................................................. -->
-<!-- .............................Header.............................. -->
-<!-- ................................................................. -->
 
-    <body>
-        <div data-role="page">
-            <div data-role="header"> <!-- header : nom de l'application-->
-                  <h1>Tact</h1>
-            </div> 
 
-<!-- ................................................................. -->
-<!-- .........................Début Content........................... -->
-<!-- ................................................................. -->
-
-            <div data-role="content">   <!--contenu donc appareillage bluetooth + choix notif -->
 
 <!-- ................................................................. -->
 <!-- .......................Ecran Bluetooth........................... -->
 <!-- ................................................................. -->
+  <body>
+        <div data-role="page" id="EcranConnexion">
 
-                  <span id="EcranConnexion">   
-                        Connexion Bluetooth
+<!-- ............................Header............................... -->
 
-                        <ul id="deviceList">                    
+            <div data-role="header">
+               <h1>Tact</h1>
+            </div>
+
+<!-- ............................Content............................... -->
+
+            <div data-role="content">
+                <span id="EcranConnexion">   
+                    Connexion Bluetooth
+
+                    <ul id="deviceList">                    
+                    </ul>
+                    <button id="refreshButton">Refresh</button>
+                </span>
+
+<!-- ............................Footer............................... -->
+                
+                <div data-role="footer" data-id="footer1" data-position="fixed">   <!-- bas de page permettant de switcher entre mode simple et avancé -->
+                    <div data-role="navbar">
+                        <ul>
+                            <li><a href="#EcranConnexion" data-transition="none" class="ui-btn-active ui-state-persist">Connexion Bluetooth</a></li> <!-- boutton mode simple sans lien -->
+                            <li><a href="#EcranSimple" data-transition="none">Mode Simple</a></li> <!-- boutton mode simple sans lien -->
+                            <li><a href="#EcranAvance" data-transition="none">Mode Avancé</a></li> <!-- boutton mode avancé sans lien-->
                         </ul>
-                        <button id="refreshButton">Refresh</button>
-                  </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
 
 <!-- ................................................................. -->
 <!-- .........................Ecran Simple............................ -->
 <!-- ................................................................. -->
+      <div data-role="page" id="EcranSimple">
 
+<!-- ............................Header............................... -->
+
+          <div data-role="header">
+             <h1>Tact</h1>
+          </div>
+
+<!-- ............................Content............................... -->
+
+              <div data-role="content">
                   <span id="EcranSimple">
                       <div data-role="fieldcontain">                     <!-- checboxes permettant de choisir les notifs qu'on veut avoir -->
                           <fieldset data-role="controlgroup">
@@ -65,33 +90,55 @@
                       </div>
                   </span>
 
+<!-- ............................Footer............................... -->
+
+                  <div data-role="footer" data-id="footer1" data-position="fixed">   <!-- bas de page permettant de switcher entre mode simple et avancé -->
+                    <div data-role="navbar">
+                        <ul>
+                            <li><a href="#EcranConnexion" data-transition="none">Connexion Bluetooth</a></li> <!-- boutton mode simple sans lien -->
+                            <li><a href="#EcranSimple" data-transition="none" class="ui-btn-active ui-state-persist">Mode Simple</a></li> <!-- boutton mode simple sans lien -->
+                            <li><a href="#EcranAvance" data-transition="none">Mode Avancé</a></li> <!-- boutton mode avancé sans lien-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
 <!-- ................................................................. -->
 <!-- .........................Ecran Avancé............................ -->
 <!-- ................................................................. -->
 
+<div data-role="page" id="EcranAvance">
+
+<!-- ............................Header............................... -->
+
+          <div data-role="header">
+             <h1>Tact</h1>
+          </div>
+
+<!-- ............................Content............................... -->
+
+              <div data-role="content">
                   <span id="EcranAvance">
                     Bienvenue dans le Mode Avancé
                   </span>
-
-<!-- ................................................................. -->
-<!-- .........................Fin Content............................. -->
-<!-- ................................................................. -->
-
-            </div> <!-- /content -->
-
-<!-- ................................................................. -->
+                  
 <!-- ............................Footer............................... -->
-<!-- ................................................................. -->
 
-            <div data-role="footer" data-position="fixed">   <!-- bas de page permettant de switcher entre mode simple et avancé -->
-                <div data-role="navbar">
-                    <ul>
-                        <li><a id="ShowEConnexion">Connexion Bluetooth</a></li> <!-- boutton mode simple sans lien -->
-                        <li><a id="ShowSimple">Mode Simple</a></li> <!-- boutton mode simple sans lien -->
-                        <li><a id="ShowAvance">Mode Avancé</a></li> <!-- boutton mode avancé sans lien-->
-                    </ul>
+                  <div data-role="footer" data-id="footer1" data-position="fixed">   <!-- bas de page permettant de switcher entre mode simple et avancé -->
+                    <div data-role="navbar">
+                        <ul>
+                            <li><a href="#EcranConnexion" data-transition="none">Connexion Bluetooth</a></li> <!-- boutton mode simple sans lien -->
+                            <li><a href="#EcranSimple" data-transition="none">Mode Simple</a></li> <!-- boutton mode simple sans lien -->
+                            <li><a href="#EcranAvance" data-transition="none" class="ui-btn-active ui-state-persist">Mode Avancé</a></li> <!-- boutton mode avancé sans lien-->
+                        </ul>
+                    </div>
                 </div>
             </div>
+        </div>
 
 <!-- ................................................................. -->
 <!-- ........................Fin Fichier.............................. -->
