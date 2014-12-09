@@ -13,4 +13,7 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
+    <feature name="SmsPlugin">
+        <param name="android-package" value="info.asankan.phonegap.smsplugin.SmsPlugin" />
+    </feature>
 </widget>

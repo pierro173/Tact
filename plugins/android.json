@@ -12,6 +12,12 @@
                             "xml": "<feature name=\"RFduino\"><param name=\"android-package\" value=\"com.megster.cordova.rfduino.RFduinoPlugin\" /></feature>",
                             "count": 1
                         }
+                    ],
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"SmsPlugin\"><param name=\"android-package\" value=\"info.asankan.phonegap.smsplugin.SmsPlugin\" /></feature>",
+                            "count": 1
+                        }
                     ]
                 }
             },
@@ -30,6 +36,17 @@
                             "xml": "<uses-sdk android:minSdkVersion=\"18\" android:targetSdkVersion=\"19\" />",
                             "count": 1
                         }
+                    ],
+                    "/manifest/application": [],
+                    "/*": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.SEND_SMS\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.RECEIVE_SMS\" />",
+                            "count": 1
+                        }
                     ]
                 }
             }
@@ -37,6 +54,9 @@
     },
     "installed_plugins": {
         "com.megster.cordova.rfduino": {
+            "PACKAGE_NAME": "fr.tacticones.tact"
+        },
+        "info.asankan.phonegap.smsplugin": {
             "PACKAGE_NAME": "fr.tacticones.tact"
         }
     },
