@@ -16,4 +16,7 @@
     <feature name="SmsPlugin">
         <param name="android-package" value="info.asankan.phonegap.smsplugin.SmsPlugin" />
     </feature>
+    <feature name="PhoneCallTrap">
+        <param name="android-package" value="io.gvox.phonecalltrap.PhoneCallTrap" />
+    </feature>
 </widget>

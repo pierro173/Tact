@@ -17,6 +17,10 @@
                         {
                             "xml": "<feature name=\"SmsPlugin\"><param name=\"android-package\" value=\"info.asankan.phonegap.smsplugin.SmsPlugin\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"PhoneCallTrap\"><param name=\"android-package\" value=\"io.gvox.phonecalltrap.PhoneCallTrap\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -46,6 +50,14 @@
                         {
                             "xml": "<uses-permission android:name=\"android.permission.RECEIVE_SMS\" />",
                             "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.PROCESS_OUTGOING_CALLS\" />",
+                            "count": 1
                         }
                     ]
                 }
@@ -57,6 +69,9 @@
             "PACKAGE_NAME": "fr.tacticones.tact"
         },
         "info.asankan.phonegap.smsplugin": {
+            "PACKAGE_NAME": "fr.tacticones.tact"
+        },
+        "io.gvox.plugin.phonecalltrap": {
             "PACKAGE_NAME": "fr.tacticones.tact"
         }
     },

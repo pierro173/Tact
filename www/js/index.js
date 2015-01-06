@@ -82,3 +82,44 @@ var app = {
         alert(reason); // real apps should use notification.alert
     }
 };
+
+
+
+/*--------------------------------------------*/
+/*-------------Réception SMS -----------------*/
+/*--------------------------------------------*/
+
+var smsplugin = cordova.require("info.asankan.phonegap.smsplugin.smsplugin");
+
+smsplugin.isSupported(successCallback(result),failureCallback(error));
+
+smsplugin.startReception(successCallback(result),failureCallback(error));
+
+/*--------------------------------------------*/
+/*-------------Réception Appels --------------*/
+/*--------------------------------------------*/
+if $('#checkbox-2').is(':checked')
+{
+    PhoneCallTrap.onCall(function(state) {
+    console.log("CHANGE STATE: " + state);
+
+    switch (state) {
+        case "RINGING":
+            console.log("Phone is ringing");
+            rfduino.write("appel")
+            break;
+        case "OFFHOOK":
+            console.log("Phone is off-hook");
+            break;
+
+        case "IDLE":
+            console.log("Phone is idle");
+            break;
+    }
+    });
+}
+
+/*--------------------------------------------*/
+/*-------------mét --------------*/
+/*--------------------------------------------*/
+
