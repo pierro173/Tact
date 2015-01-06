@@ -6,4 +6,9 @@
 /Users/Crymsius/Tact/platforms/android/ant-build/classes/fr/tacticones/tact/R$xml.class \
 /Users/Crymsius/Tact/platforms/android/ant-build/classes/fr/tacticones/tact/R.class \
 /Users/Crymsius/Tact/platforms/android/ant-build/classes/fr/tacticones/tact/Tact.class \
+/Users/Crymsius/Tact/platforms/android/ant-build/classes/info/asankan/phonegap/smsplugin/SmsPlugin$1.class \
+/Users/Crymsius/Tact/platforms/android/ant-build/classes/info/asankan/phonegap/smsplugin/SmsPlugin$ActionType.class \
+/Users/Crymsius/Tact/platforms/android/ant-build/classes/info/asankan/phonegap/smsplugin/SmsPlugin.class \
+/Users/Crymsius/Tact/platforms/android/ant-build/classes/info/asankan/phonegap/smsplugin/SmsReceiver.class \
+/Users/Crymsius/Tact/platforms/android/ant-build/classes/info/asankan/phonegap/smsplugin/SmsSender.class \
 /Users/Crymsius/Tact/platforms/android/ant-build/dexedLibs/classes-7b6df06f9b5e9ba7cc00514c6d34d7ce.jar \
