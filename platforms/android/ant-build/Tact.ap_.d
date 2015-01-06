@@ -44,6 +44,9 @@
 /Users/Crymsius/Tact/platforms/android/assets/www/images/icons-36-white.png \
 /Users/Crymsius/Tact/platforms/android/assets/www/js/index.js \
 /Users/Crymsius/Tact/platforms/android/assets/www/plugins/com.megster.cordova.rfduino \
+/Users/Crymsius/Tact/platforms/android/assets/www/plugins/info.asankan.phonegap.smsplugin \
 /Users/Crymsius/Tact/platforms/android/assets/www/plugins/com.megster.cordova.rfduino/www \
 /Users/Crymsius/Tact/platforms/android/assets/www/plugins/com.megster.cordova.rfduino/www/rfduino.js \
+/Users/Crymsius/Tact/platforms/android/assets/www/plugins/info.asankan.phonegap.smsplugin/www \
+/Users/Crymsius/Tact/platforms/android/assets/www/plugins/info.asankan.phonegap.smsplugin/www/smsplugin.js \
 /Users/Crymsius/Tact/platforms/android/ant-build/AndroidManifest.xml \
