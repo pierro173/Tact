@@ -272,15 +272,16 @@ if $('#checkbox-2').is(':checked')
     console.log("CHANGE STATE: " + state);
 
     switch (state) {
-        case "RINGING":
+        case "RINGING": // tééphone sonne
             console.log("Phone is ringing");
             rfduino.write("appel")
             break;
-        case "OFFHOOK":
+        case "OFFHOOK": // décroché
             console.log("Phone is off-hook");
+            rfduino.write("telDecroche")
             break;
 
-        case "IDLE":
+        case "IDLE": // Mode veille
             console.log("Phone is idle");
             break;
     }
